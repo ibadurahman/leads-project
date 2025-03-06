@@ -18,4 +18,30 @@ async function createLeadRecord(lead) {
   }
 }
 
-export { getLeadsRecords, createLeadRecord };
+async function updateLeadStatus(id, status) {
+  try {
+    const response = await leads
+      .findByIdAndUpdate(id, { status }, { new: true })
+      .exec();
+
+    return response;
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
+async function deleteLeadRecord(id) {
+  try {
+    const response = await leads.findByIdAndDelete(id).exec();
+    return response;
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
+export {
+  getLeadsRecords,
+  createLeadRecord,
+  updateLeadStatus,
+  deleteLeadRecord,
+};
