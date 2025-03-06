@@ -10,7 +10,8 @@
     "client-watch": "npm run dev --prefix frontend",
     "server-watch": "npm run dev --prefix backend",
     "watch": "concurrently \"npm run server-watch\" \"npm run client-watch\"",
-    "deploy": "npm run build --prefix frontend && npm run start --prefix backend"
+    "deploy": "npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "author": "Ibadurahman Hanif",
   "license": "MIT",
