@@ -1,0 +1,11 @@
+{
+  "name": "leads-project",
+  "version": "1.0.0",
+  "description": "Simple app to store and listing our leads",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ibadurahman Hanif",
+  "license": "MIT"
+}
