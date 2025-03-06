@@ -4,8 +4,17 @@
   "description": "Simple app to store and listing our leads",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client-install": "npm install --prefix frontend",
+    "server-install": "npm install --prefix backend",
+    "install": "npm run client-install && npm run server-install",
+    "client-watch": "npm run dev --prefix frontend",
+    "server-watch": "npm run dev --prefix backend",
+    "watch": "concurrently \"npm run server-watch\" \"npm run client-watch\"",
+    "deploy": "npm run build --prefix frontend && npm run start --prefix backend"
   },
   "author": "Ibadurahman Hanif",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
