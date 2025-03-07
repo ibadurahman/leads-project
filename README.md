@@ -25,26 +25,11 @@ Make sure you have the following installed on your machine:
     cd leads-project
     ```
 
-3. Install the dependencies on main project:
+3. Install the dependencies:
 
     ```bash
     npm install
     ```
-
-4. Install the dependencies on frontend:
-
-    ```bash
-    cd frontend
-    npm install
-    ```
-
-5. Install the dependencies on backend:
-
-    ```bash
-    cd backend
-    npm install
-    ```
-
 ### Running the Development Server
 
 To start the apps locally, make sure you are on root folder then run:

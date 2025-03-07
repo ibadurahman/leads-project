@@ -4,6 +4,7 @@
   "description": "Simple app to store and listing our leads",
   "main": "index.js",
   "scripts": {
+    "isntall": "cd frontend && npm install && cd ../backend && npm install",
     "client-watch": "npm run dev --prefix frontend",
     "server-watch": "npm run dev --prefix backend",
     "watch": "concurrently \"npm run server-watch\" \"npm run client-watch\"",
